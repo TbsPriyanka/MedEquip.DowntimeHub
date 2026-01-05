@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedEquip.DowntimeHub.API", "MedEquip.DowntimeHub.API\MedEquip.DowntimeHub.API.csproj", "{4B4C5BB4-74C3-4A79-8721-240E9F92A30C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedEquip.DowntimeHub.BAL", "MedEquip.DowntimeHub.BAL\MedEquip.DowntimeHub.BAL.csproj", "{88921542-8F45-4DE0-AEFA-CC91868FFE60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedEquip.DowntimeHub.Common", "MedEquip.DowntimeHub.Common\MedEquip.DowntimeHub.Common.csproj", "{9510B5D9-A843-478D-92A3-E8CE27ABEF2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedEquip.DowntimeHub.DAL", "MedEquip.DowntimeHub.DAL\MedEquip.DowntimeHub.DAL.csproj", "{BDC04B18-656B-4FD3-A799-713A4873DAE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedEquip.DowntimeHub.Model", "MedEquip.DowntimeHub.Model\MedEquip.DowntimeHub.Model.csproj", "{227301F4-59C3-429A-B1CB-6A58E9213354}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B4C5BB4-74C3-4A79-8721-240E9F92A30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4C5BB4-74C3-4A79-8721-240E9F92A30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4C5BB4-74C3-4A79-8721-240E9F92A30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4C5BB4-74C3-4A79-8721-240E9F92A30C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88921542-8F45-4DE0-AEFA-CC91868FFE60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88921542-8F45-4DE0-AEFA-CC91868FFE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88921542-8F45-4DE0-AEFA-CC91868FFE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88921542-8F45-4DE0-AEFA-CC91868FFE60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9510B5D9-A843-478D-92A3-E8CE27ABEF2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9510B5D9-A843-478D-92A3-E8CE27ABEF2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9510B5D9-A843-478D-92A3-E8CE27ABEF2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9510B5D9-A843-478D-92A3-E8CE27ABEF2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC04B18-656B-4FD3-A799-713A4873DAE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC04B18-656B-4FD3-A799-713A4873DAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC04B18-656B-4FD3-A799-713A4873DAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC04B18-656B-4FD3-A799-713A4873DAE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{227301F4-59C3-429A-B1CB-6A58E9213354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{227301F4-59C3-429A-B1CB-6A58E9213354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{227301F4-59C3-429A-B1CB-6A58E9213354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{227301F4-59C3-429A-B1CB-6A58E9213354}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C17A878A-339D-49BB-92A7-5DA2D4E3F7E3}
+	EndGlobalSection
+EndGlobal

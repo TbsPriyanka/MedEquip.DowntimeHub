@@ -1,0 +1,6 @@
+@MedEquip.DowntimeHub.API_HostAddress = http://localhost:5213
+
+GET {{MedEquip.DowntimeHub.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
