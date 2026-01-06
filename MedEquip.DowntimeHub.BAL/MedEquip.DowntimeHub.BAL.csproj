@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MedEquip.DowntimeHub.Common\MedEquip.DowntimeHub.Common.csproj" />
+    <ProjectReference Include="..\MedEquip.DowntimeHub.DAL\MedEquip.DowntimeHub.DAL.csproj" />
+    <ProjectReference Include="..\MedEquip.DowntimeHub.Model\MedEquip.DowntimeHub.Model.csproj" />
+  </ItemGroup>
+
 </Project>

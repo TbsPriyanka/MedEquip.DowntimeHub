@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MedEquip.DowntimeHub.Common\MedEquip.DowntimeHub.Common.csproj" />
+    <ProjectReference Include="..\MedEquip.DowntimeHub.Model\MedEquip.DowntimeHub.Model.csproj" />
+  </ItemGroup>
+
 </Project>
