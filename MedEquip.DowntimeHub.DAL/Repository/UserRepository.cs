@@ -38,11 +38,10 @@ namespace MedEquip.DowntimeHub.DAL.Repository
             return await _sqlHelper.QueryAsync<UserResponse>(StoredProcedure.User_List);
         }
 
-        public async Task<bool> DeleteUser(int userId, int actionBy)
+        public async Task<bool> DeleteUser(int userId)
         {
             var parameters = new DynamicParameters();
             parameters.Add("@UserId", userId);
-            parameters.Add("@ActionBy", actionBy);
 
             int result = await _sqlHelper.ExecuteScalarAsync<int>(StoredProcedure.User_Delete,parameters);
 

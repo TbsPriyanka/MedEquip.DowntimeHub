@@ -8,6 +8,6 @@ namespace MedEquip.DowntimeHub.BAL.Interfaces
         Task<ResponseResult<UserResponse>> AddOrUpdate(UserRequest request);
         Task<ResponseResult<UserResponse>> GetById(int userId);
         Task<ResponseResult<List<UserResponse>>> GetList();
-        Task<ResponseResult<bool>> Delete(int userId, int actionBy);
+        Task<ResponseResult<bool>> Delete(int userId);
     }
 }

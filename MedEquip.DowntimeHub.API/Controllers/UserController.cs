@@ -42,9 +42,9 @@ namespace MedEquip.DowntimeHub.API.Controllers
 
         [HttpDelete("Delete/{userId}")]
         [Authorize]
-        public async Task<IActionResult> Delete(int userId, [FromQuery] int actionBy)
+        public async Task<IActionResult> Delete(int userId)
         {
-            var result = await _userService.Delete(userId, actionBy);
+            var result = await _userService.Delete(userId);
             return StatusCode(result.Code, result);
         }
     }

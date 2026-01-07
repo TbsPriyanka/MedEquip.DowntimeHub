@@ -31,7 +31,18 @@ namespace MedEquip.DowntimeHub.BAL.Services
 
                 return ResponseHelper<UserResponse>.Success(
                     request.UserId == 0 ? "User created successfully." : "User updated successfully.",
-                    new UserResponse { UserId = userId }
+                    new UserResponse
+                    { 
+                        UserId = userId,
+                        UserCode = request.UserCode,
+                        FullName = request.FullName,
+                        Email = request.Email,
+                        MobileNo = request.MobileNo,
+                        RoleId = request.RoleId,
+                        Department = request.Department,
+                        IsActive = request.IsActive,
+                        Password = request.Password
+                    }
                 );
             }
             catch (Exception)
@@ -66,10 +77,7 @@ namespace MedEquip.DowntimeHub.BAL.Services
             {
                 var users = await _repository.GetUserList();
 
-                return ResponseHelper<List<UserResponse>>.Success(
-                    users.ToList(),
-                    "Users fetched successfully."
-                );
+                return ResponseHelper<List<UserResponse>>.Success(users.ToList(),"Users fetched successfully.");
             }
             catch (Exception)
             {
@@ -77,14 +85,14 @@ namespace MedEquip.DowntimeHub.BAL.Services
             }
         }
 
-        public async Task<ResponseResult<bool>> Delete(int userId, int actionBy)
+        public async Task<ResponseResult<bool>> Delete(int userId)
         {
             try
             {
                 if (userId <= 0)
                     return ResponseHelper<bool>.Error("Invalid UserId.");
 
-                bool isDeleted = await _repository.DeleteUser(userId, actionBy);
+                bool isDeleted = await _repository.DeleteUser(userId);
 
                 if (!isDeleted)
                     return ResponseHelper<bool>.Error("Unable to delete user.");

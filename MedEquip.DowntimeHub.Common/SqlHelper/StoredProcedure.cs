@@ -11,5 +11,9 @@
         public const string User_ForgotPassword = "User_ForgotPassword";
         public const string User_Logout = "User_Logout";
 
+        public const string Role_AddOrUpdate = "Role_AddOrUpdate";
+        public const string Role_GetById = "Role_GetById";
+        public const string Role_List = "Role_List";
+        public const string Role_Delete = "Role_Delete";
     }
 }

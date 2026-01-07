@@ -7,6 +7,6 @@ namespace MedEquip.DowntimeHub.DAL.Interfaces
         Task<int> AddOrUpdateUser(UserRequest request);
         Task<UserResponse?> GetUserById(int userId);
         Task<IEnumerable<UserResponse>> GetUserList();
-        Task<bool> DeleteUser(int userId, int actionBy);
+        Task<bool> DeleteUser(int userId);
     }
 }
