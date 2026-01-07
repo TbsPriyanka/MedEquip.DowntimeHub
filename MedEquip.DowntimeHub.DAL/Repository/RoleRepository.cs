@@ -37,7 +37,7 @@ namespace MedEquip.DowntimeHub.DAL.Repository
             var parameters = new DynamicParameters();
             parameters.Add("@RoleId", roleId);
 
-            int result = await _sqlHelper.ExecuteScalarAsync<int>(StoredProcedure.User_Delete, parameters);
+            int result = await _sqlHelper.ExecuteScalarAsync<int>(StoredProcedure.Role_Delete, parameters);
 
             return result > 0;
         }

@@ -28,6 +28,10 @@ namespace MedEquip.DowntimeHub.API
             // Role
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<IRoleService, RoleService>();
+
+            // Organization
+            services.AddScoped<IOrganizationRepository, OrganizationRepository>();
+            services.AddScoped<IOrganizationService, OrganizationService>();
         }
     }
 }

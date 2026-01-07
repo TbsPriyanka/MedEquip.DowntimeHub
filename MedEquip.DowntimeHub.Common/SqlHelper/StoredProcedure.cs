@@ -15,5 +15,10 @@
         public const string Role_GetById = "Role_GetById";
         public const string Role_List = "Role_List";
         public const string Role_Delete = "Role_Delete";
+
+        public const string Organization_AddOrUpdate = "Organization_AddOrUpdate";
+        public const string Organization_GetById = "Organization_GetById";
+        public const string Organization_List = "Organization_List";
+        public const string Organization_Delete = "Organization_Delete";
     }
 }
